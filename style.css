@@ -31,6 +31,8 @@
   --Header-Outline: hsl(217, 16%, 45%);
 }
 
+/* RESET */
+
 * {
   font-family: "Barlow Semi Condensed";
   margin: 0;
@@ -38,8 +40,45 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 body {
   min-height: 100vh;
   min-width: 100vw;
   background: var(--bg-gradient);
+  display: flex;
+  justify-content: center;
+}
+
+.main-header {
+  width: 700px;
+  max-width: 700px;
+  border: 3px solid var(--Header-Outline);
+  border-radius: 0.8rem;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.score {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  border-radius: 0.6rem;
+}
+
+.score span {
+  color: var(--Score-Text);
+  letter-spacing: 3px;
+}
+
+.score-number {
+  color: var(--Dark-Text);
+  font-size: 4rem;
 }
