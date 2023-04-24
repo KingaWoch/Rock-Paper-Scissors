@@ -1,0 +1,45 @@
+:root {
+  --bg-gradient: radial-gradient(
+    at top,
+    hsl(214, 47%, 23%),
+    hsl(237, 49%, 15%)
+  );
+  --Scissors-Gradient: radial-gradient(
+    at top,
+    hsl(39, 89%, 49%),
+    hsl(40, 84%, 53%)
+  );
+  --Paper-Gradient: radial-gradient(
+    at top,
+    hsl(230, 89%, 62%),
+    hsl(230, 89%, 65%)
+  );
+  --Rock-Gradient: radial-gradient(
+    at top,
+    hsl(349, 71%, 52%),
+    hsl(349, 70%, 56%)
+  );
+  --Lizard-Gradient: radial-gradient(
+    at top,
+    hsl(261, 73%, 60%),
+    hsl(261, 72%, 63%)
+  );
+  --Cyan: radial-gradient(at top, hsl(189, 59%, 53%), hsl(189, 58%, 57%));
+
+  --Dark-Text: hsl(229, 25%, 31%);
+  --Score-Text: hsl(229, 64%, 46%);
+  --Header-Outline: hsl(217, 16%, 45%);
+}
+
+* {
+  font-family: "Barlow Semi Condensed";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background: var(--bg-gradient);
+}
