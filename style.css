@@ -29,6 +29,7 @@
   --Dark-Text: hsl(229, 25%, 31%);
   --Score-Text: hsl(229, 64%, 46%);
   --Header-Outline: hsl(217, 16%, 45%);
+  --White: #fff;
 }
 
 /* RESET */
@@ -44,6 +45,9 @@ img {
   display: block;
   max-width: 100%;
 }
+button {
+  cursor: pointer;
+}
 
 body {
   min-height: 100vh;
@@ -52,6 +56,8 @@ body {
   display: flex;
   justify-content: center;
 }
+
+/* HEADER */
 
 .main-header {
   width: 700px;
@@ -66,7 +72,7 @@ body {
 }
 
 .score {
-  background-color: white;
+  background-color: var(--White);
   display: flex;
   flex-direction: column;
   padding: 1rem 3rem;
@@ -81,4 +87,76 @@ body {
 .score-number {
   color: var(--Dark-Text);
   font-size: 4rem;
+}
+
+/* MODAL */
+
+.rules-modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rules-modal.hidden {
+  display: none;
+}
+
+.rules {
+  background-color: var(--White);
+  width: 390px;
+  padding: 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 0.7rem;
+}
+
+.rules h2 {
+  color: var(--Dark-Text);
+  font-size: 2rem;
+}
+
+.close-modal {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  border: none;
+  background-color: transparent;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.rules-btn {
+  background-color: transparent;
+  color: var(--White);
+  border: 2px solid var(--Header-Outline);
+  width: 130px;
+  height: 40px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  border-radius: 0.6rem;
+}
+
+.attribution {
+  width: 100%;
+  font-size: 0.7rem;
+  color: var(--White);
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--Header-Outline);
 }
