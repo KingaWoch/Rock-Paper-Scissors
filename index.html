@@ -22,35 +22,52 @@
     <title>Frontend Mentor | Rock, Paper, Scissors</title>
   </head>
   <body>
-    <div class="page">
-      <header class="main-header">
-        <a href="/"><img src="images/logo.svg" alt="Rock Paper Scissors" /></a>
-        <div class="score">
-          <span>SCORE</span>
-          <strong class="score-number">12</strong>
-        </div>
-      </header>
-      <main></main>
-      <footer>
-        <button class="rules-btn">RULES</button>
-        <div class="rules-modal hidden">
-          <section class="rules">
-            <header><h2>RULES</h2></header>
-            <button class="close-modal">
-              <img src="images/icon-close.svg" alt="close rules" />
-            </button>
-            <img src="images/image-rules.svg" alt="rules" />
-          </section>
-        </div>
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by
-          <a href="https://github.com/KingaWoch" target="_blank">Kinga Woch</a>.
-        </p>
-      </footer>
-    </div>
+    <header class="main-header">
+      <a href="/"><img src="images/logo.svg" alt="Rock Paper Scissors" /></a>
+      <div class="score">
+        <span>SCORE</span>
+        <strong class="score-number">12</strong>
+      </div>
+    </header>
+    <main>
+      <!-- STEP 1 -->
+      <section class="first-step">
+        <button class="button button-paper">
+          <div class="button_image-wrapper">
+            <img src="images/icon-paper.svg" alt="paper" />
+          </div>
+        </button>
+        <button class="button button-scissors">
+          <div class="button_image-wrapper">
+            <img src="images/icon-scissors.svg" alt="scissors" />
+          </div>
+        </button>
+        <button class="button button-rock">
+          <div class="button_image-wrapper">
+            <img src="images/icon-rock.svg" alt="rock" />
+          </div>
+        </button>
+      </section>
+    </main>
+    <footer>
+      <button class="rules-btn">RULES</button>
+      <div class="rules-modal hidden">
+        <section class="rules">
+          <header><h2>RULES</h2></header>
+          <button class="close-modal">
+            <img src="images/icon-close.svg" alt="close rules" />
+          </button>
+          <img src="images/image-rules.svg" alt="rules" />
+        </section>
+      </div>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/KingaWoch" target="_blank">Kinga Woch</a>.
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
