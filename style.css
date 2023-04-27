@@ -87,27 +87,28 @@ body {
 .score-number {
   color: var(--Dark-Text);
   font-size: 4rem;
+  text-align: center;
 }
 
 /* GAME */
 
 main {
   margin: 0 auto;
-  padding: 7rem 0;
+  padding: 11rem 0;
 }
 
 .step-1 {
   background: url(images/bg-triangle.svg);
   background-size: cover;
   aspect-ratio: 313/278;
-  width: 50%;
   margin: 0 auto;
   position: relative;
+  max-width: 300px;
 }
 
 .step-1 .button {
   position: absolute;
-  width: 50%;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,7 +150,7 @@ main {
 
 .button-rock {
   bottom: 0;
-  left: 25%;
+  left: 18%;
   transform: translateY(25%);
 }
 
@@ -222,6 +223,10 @@ main {
   height: 40px;
   border-radius: 0.5rem;
   border: none;
+}
+
+.hidden {
+  display: none;
 }
 
 /* MODAL */
