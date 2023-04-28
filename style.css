@@ -55,6 +55,7 @@ body {
   min-width: 100vw;
   background: var(--bg-gradient);
   padding-top: 2rem;
+  padding-inline: 2rem;
   overflow-x: hidden;
 }
 
@@ -257,6 +258,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 
 .rules-modal.hidden {
@@ -281,6 +283,7 @@ main {
 
 .close-modal {
   position: absolute;
+  height: 20px;
   top: 2rem;
   right: 2rem;
   border: none;
@@ -294,7 +297,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-inline: 2rem;
   gap: 2rem;
 }
 
@@ -318,4 +320,51 @@ footer {
 
 .attribution a {
   color: var(--Header-Outline);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .main-header {
+    padding: 0.8rem 0.8rem;
+  }
+
+  .main-header img {
+    height: 60px;
+  }
+
+  .score {
+    padding: 0.5rem 1rem;
+  }
+
+  .score span {
+    font-size: 0.7rem;
+  }
+
+  .score-number {
+    font-size: 2rem;
+  }
+
+  .step-1 {
+    width: 190px;
+  }
+
+  .step-1 .button {
+    width: 130px;
+  }
+
+  .rules {
+    height: 100%;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 5rem;
+    gap: 8rem;
+    border-radius: 0;
+  }
+
+  .close-modal {
+    top: 85%;
+    right: 50%;
+  }
 }

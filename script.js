@@ -151,7 +151,7 @@ const showResult = () => {
 
   setTimeout(renderResult, 600);
   setTimeout(displayShadow, 600);
-  renderScore();
+  setTimeout(renderScore, 600);
 };
 
 const renderResult = () => {
