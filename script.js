@@ -2,6 +2,7 @@
 
 const playerWinsLSKey = "playerWins";
 const houseWinsLSKey = "houseWins";
+const main = document.querySelector("main");
 const stepOne = document.querySelector(".step-1");
 const stepTwo = document.querySelector(".step-2");
 const playerColumn = document.querySelector(".player-column");
@@ -71,6 +72,7 @@ const showStepTwo = () => {
   createElementPickedByPlayer();
   createEmptyHouseElement();
   setTimeout(createElementPickedByHouse, 200);
+  main.style.padding = "6rem 0 0 0";
 };
 
 const createElementPickedByPlayer = () => {
@@ -172,6 +174,7 @@ const playAgain = () => {
   stepTwo.classList.add("hidden");
   stepOne.classList.remove("hidden");
   resultColumn.classList.add("result-hidden");
+  main.style.padding = "11rem 0";
 };
 
 playAgainBtn.addEventListener("click", playAgain);
@@ -202,3 +205,11 @@ rulesModal.addEventListener("click", (e) => {
     rulesModal.classList.add("hidden");
   }
 });
+
+// PADDING
+
+// if (stepOne.classList.contains("hidden")) {
+//   main.style.padding = "6rem 0 0 0";
+// } else {
+//   main.style.padding = "6rem 0 0 0";
+// }
