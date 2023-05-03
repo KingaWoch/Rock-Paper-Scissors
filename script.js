@@ -135,6 +135,7 @@ const showResult = () => {
     result.innerText = "DRAW";
   } else if (winningWariants[state.playerPick].includes(state.housePick)) {
     result.innerText = "YOU WIN";
+    playAgainBtn.style.color = "hsl(229, 25%, 31%)";
     localStorage.setItem(playerWinsLSKey, state.playerWins + 1);
     state = {
       ...state,
@@ -143,6 +144,7 @@ const showResult = () => {
     // playerColumn.querySelector(".picked").classList.add("winner");
   } else {
     result.innerText = "YOU LOSE";
+    playAgainBtn.style.color = "hsl(349, 71%, 40%)";
     localStorage.setItem(playerWinsLSKey, state.houseWins + 1);
     state = {
       ...state,
